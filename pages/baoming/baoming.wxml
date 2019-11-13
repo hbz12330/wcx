@@ -1,0 +1,64 @@
+<!--pages/baoming/baoming.wxml-->
+<view class="app-bowen">
+ <view class="section section_gap">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="scroll-view-item_H" wx:for="{{jg}}">
+        <image src="http://192.168.1.3:3000/{{item.img_url}}"class="scroll-image"/>     
+      </view> 
+    </scroll-view>
+  </view>
+  <view style="background:pink;color:white;font-size:40rpx">HTML推荐</view>
+ <view wx:for="{{list}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+  <view style="background:pink;color:white;font-size:40rpx">CSS推荐</view>
+   <view wx:for="{{csd}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+ <view style="background:pink;color:white;font-size:40rpx">jquery推荐</view>
+ <view wx:for="{{jqd}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+ <view style="background:pink;color:white;font-size:40rpx">javascript推荐</view>
+ <view wx:for="{{javascript}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+ <view style="background:pink;color:white;font-size:40rpx">Vue推荐</view>
+ <view wx:for="{{vue}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+ <view style="background:pink;color:white;font-size:40rpx">面试题推荐</view>
+ <view wx:for="{{msd}}" class="th">
+ <view>
+  <text>{{item.title}}</text>
+ </view>
+ <view>
+  <text>{{item.time}}</text>
+ </view>
+ </view>
+</view>

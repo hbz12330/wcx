@@ -1,0 +1,32 @@
+/* pages/baoming/baoming.wxss */
+.th{
+  display: flex;
+  justify-content: space-between;
+}
+.hd scroll-view{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section{
+  width: 100%;
+  margin-top:10px;
+}
+.scroll-view_H{
+  height:210rpx;
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width:300rpx;
+  height:210rpx;
+  margin-right:5rpx;
+  display: inline-block;
+}
+.scroll-image{
+  width:300rpx;
+  height:210rpx;
+  display: block;
+  background: red;
+  border-radius: 10rpx;
+}

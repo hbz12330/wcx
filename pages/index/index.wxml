@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <!--view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view-->
+  <view>
+    <swiper indicator-dots="true" indicator-color="red" indicator-active-color="blue" autoplay="true" interval="5000" duration="2000" circular="true">
+      <swiper-item wx:for="{{lunbo}}">
+      <image src="http://192.168.1.3:3000/{{item.img}}" style="width:100%;height:150px"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="userinfo">
+  <view class="sp">
+    <view wx:for="{{tts}}" bindtap="{{item.tiaozhuan}}">
+    <view>
+      <image src="http://192.168.1.3:3000/{{item.img_url}}" style="width:100rpx;height:100rpx"></image>
+    </view>
+    <text>{{item.title}}</text>
+   </view>
+  </view>
+  <view class="bg">
+   每天坚持不懈的学习新技术，为世界做贡献！
+  </view>
+  </view>
+  <view class="section section_gap">
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class="scroll-view-item_H" wx:for="{{list}}">
+        <image src="http://192.168.1.3:3000/{{item.img_url}}"class="scroll-image"/>     
+      </view> 
+    </scroll-view>
+  </view>
+</view>
